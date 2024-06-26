@@ -20,7 +20,7 @@ const firebase = require('./util/firebase.util');
 const flex = require('./message/flex');
 
 exports.helloWorld = onRequest((request, response) => {
-    response.send(`Method : ${request,method} `);
+    response.send(`Method : ${request.method} `);
 });
 
 function validateWebhook(request, response) {
